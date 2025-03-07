@@ -28,14 +28,16 @@
     align-items: center;
 
     width: 100%;
-    height: 50px;
+    height: 55px;
     background: #fff;
     padding: 0 70px;
 
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .logo {
@@ -76,7 +78,7 @@
 }
 
 #button {
-    padding: .8rem 2rem ;
+    padding: .6rem 1rem ;
     background: #143314;
     color: #fff;
     font-weight: bold;
@@ -209,9 +211,7 @@
     font-style: italic;
 
 }
-body {
-    margin-bottom: 1000px;
-}
+
 
 /* atividades section */
 
@@ -236,11 +236,32 @@ body {
 
 .atividades-control {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 60px;
 }
+
 .atividades-control p , h3 {
     color: #fff;
 }
 
-.atividades-control img {
-    width:  200px;
+.atividades-img img {
+    width:  500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
+
+.atividades-control .header , .atividades-img{
+    flex: 1;
+}
+
+.atividades-control .atividades-img:nth-child(1) {
+   text-align: end;
+}
+
+body {
+    margin-bottom: 1000px;
+}
+
